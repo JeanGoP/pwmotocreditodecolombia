@@ -7,14 +7,8 @@ function CarouselPeque({ img = '' }) {
 
   const jsonItemsTecnicos = [
     {
-      titulo: 'images/banners/banner-cb300f-dream-motos-web.jpg',
-    },
-    {
-      titulo: 'images/banners/CB100_bannermoto.jpg',
-    },
-    {
-      titulo: 'images/banners/CB190R_bannermoto.jpg',
-    },
+      titulo: 'images/banners/BannerModelosSuzuki.png',
+    }
   ];
 
   const rutas = useMemo(() => {

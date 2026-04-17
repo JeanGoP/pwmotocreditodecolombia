@@ -38,28 +38,28 @@ export const ciudadModal = [
 
 export const jsonCardTecnologia = [
   {
-    titulo: 'TECNOLOGÍA DTS - i',
+    titulo: 'Sistema de frenos ABS (Anti-lock Braking System)',
     texto:
-      'Nuestra tecnología patentada DTS-i de encendido digital de doble o triple chispa mejora el rendimiento del combustible, agregando potencia y mejorando el kilometraje para satisfacer todas las necesidades de conducción, tanto en ciudades como en carreteras.',
-    imagen: '/images/card.jpg',
+      'Evita el bloqueo de las ruedas durante frenadas bruscas, mejorando la estabilidad y el control en diferentes condiciones de conducción.',
+    imagen: '/images/tecnologia/Freno.jpg',
   },
   {
-    titulo: 'EXHAUSTEC',
+    titulo: 'Inyección electrónica (Fuel Injection – FI)',
     texto:
-      'El diseño inteligente de la cámara de expansión ExhausTEC que amplifica significativamente el torque, obteniendo un mejor rendimiento de combustible en la conducción diaria, ya sea de baja o media intensidad. Un atributo muy apreciado por motociclistas en todo el mundo.',
-    imagen: '/images/card2.jpg',
+      'Optimiza la mezcla de combustible y aire para lograr mayor eficiencia, mejor rendimiento del motor y menores emisiones.',
+    imagen: '/images/tecnologia/inyeccion.jpg',
   },
   {
-    titulo: 'SUSPENSIÓN SNS',
+    titulo: 'Iluminación LED',
     texto:
-      'El equipo de suspensión SNS (resorte en resorte) patentado por Bajaj, está diseñado para garantizar una comodidad superior. De la misma manera optimiza el equilibrio, reduce el encendido prematuro y ofrece mayor estabilidad en la conducción en ciudad y carreteras.',
-    imagen: '/images/card3.jpg',
+      'Proporciona mayor visibilidad y seguridad, además de un diseño moderno con menor consumo energético frente a sistemas tradicionales.',
+    imagen: '/images/tecnologia/Led.jpg',
   },
   {
-    titulo: 'TECNOLOGÍA DE 4 VÁLVULAS',
+    titulo: 'Tablero digital o semidigital',
     texto:
-      'Nuestra tecnología de 4 válvulas mejora la capacidad del motor y aumenta su potencia, manteniéndolo así en óptimas condiciones por más tiempo, lo que representa mayor durabilidad para los motociclistas en todo el mundo.',
-    imagen: '/images/card4.jpg',
+      'Ofrece información clara y en tiempo real sobre el estado de la motocicleta, mejorando la experiencia de conducción.',
+    imagen: '/images/tecnologia/Tablerodigital.jpg',
   },
 ];
 
@@ -267,30 +267,36 @@ export const jsonPuntosVentas = [
 
 export const jsonCardMarcasMotos = [
   {
-    titulo: 'DISCOVER',
-    descripcion: 'descubre el mundo sin límites. 🌍 Más potencia, más aventura, más kilómetros por recorrer.',
-    imagen: '/images/Discover.jpg',
+    titulo: 'ALTO CILINDRAJE',
+    descripcion: '',
+    imagen: '/images/segmentos/ALTOCILINDRAJE.png',
   },
   {
-    titulo: 'BOXER',
-    descripcion: 'hecha para rendir, diseñada para durar. 💪 Conquista más camino, más lejos, más fácil.',
-    imagen: '/images/Boxer.jpg',
+    titulo: 'AUTOMÁTICAS',
+    descripcion: '',
+    imagen: '/images/segmentos/AUTOMÁTICAS.png',
   },
   {
-    titulo: 'PLATINO',
-    descripcion: 'eficiencia sin límites. ⚡ Lleva tu economía más lejos, con cada kilómetro recorrido.',
-    imagen: '/images/platino.jpg',
+    titulo: 'ENDURO',
+    descripcion: '',
+    imagen: '/images/segmentos/ENDURO.png',
   },
   {
-    titulo: 'DOMINAR',
-    descripcion: '¡Con Dominar, la carretera es tuya! 🛣️ Siente el poder y conquista cada kilómetro.',
-    imagen: '/images/dominarmarca.jpg',
+    titulo: 'SEMIAUTOMÁTICAS',
+    descripcion: '',
+    imagen: '/images/segmentos/SEMIAUTOMÁTICAS.png',
   },
   {
-    titulo: 'PULSAR',
-    descripcion: '¡Siente el poder, domina el camino! 🏍️ Con Pulsar, la adrenalina es tu mejor copiloto.',
-    imagen: '/images/pulsar.jpg',
+    titulo: 'SPORT',
+    descripcion: '',
+    imagen: '/images/segmentos/SPORT.png',
   },
+  
+  {
+    titulo: 'AVENTURA',
+    descripcion: '',
+    imagen: '/images/segmentos/V-STROM.png',
+  }
 ];
 
 export const jsonImagenCarousel = [

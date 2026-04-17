@@ -17,6 +17,7 @@ import AnimatedCounter from './animator';
 import { useEffect } from 'react';
 import CarouselPeque from '../../components/carouselpeque';
 import TecnologiaHonda from '../../components/tecnoloogia';
+import MotoDescripcion from '../../components/descripcionmoto';
 
 export function Home() {
   const NIT = import.meta.env.VITE_API_NIT_EMPRESA;
@@ -41,43 +42,103 @@ export function Home() {
 
   const jsonItemsTecnicos = [
     {
-      titulo: 'Arranque',
-      descripcion: configuracionData?.arranqueMoto_2 || '',
+      titulo: 'Cilindraje',
+      descripcion: '149 cc',
     },
     {
-      titulo: 'Alimentación',
-      descripcion: configuracionData?.alimentacionMoto_2 || '',
+      titulo: 'Potencia',
+      descripcion: '11.8 HP @ 8000 rpm',
     },
     {
-      titulo: 'Torque máximo',
-      descripcion: configuracionData?.torqueMoto_2 || '',
-    },
-    {
-      titulo: 'Batería',
-      descripcion: configuracionData?.bateriaMoto_2 || '',
+      titulo: 'Torque',
+      descripcion:  '11.6 Nm @ 6000 rpm',
     },
     {
       titulo: 'Transmisión',
-      descripcion: configuracionData?.transmisionMoto_2 || '',
-    },
-    {
-      titulo: 'Capacidad del Tanque',
-      descripcion: configuracionData?.tanqueMoto_2 || '',
+      descripcion: '5 velocidades',
     },
     {
       titulo: 'Peso',
-      descripcion: configuracionData?.pesoMoto_2 || '',
+      descripcion:  '139 kg',
     },
     {
-      titulo: 'Ancho',
-      descripcion: configuracionData?.anchoMoto_2 || '',
+      titulo: 'Altura al suelo',
+      descripcion:  '244 mm',
+    },
+    {
+      titulo: 'Freno delantero',
+      descripcion:  'Disco con ABS',
+    },
+    {
+      titulo: 'Freno trasero',
+      descripcion:  'Tambor',
     },
   ];
+  const jsonItemsTecnicos_2 = [
+    {
+      titulo: 'Cilindraje',
+      descripcion: '162 cc',
+    },
+    {
+      titulo: 'Potencia',
+      descripcion: '14.75 HP @ 8000 rpm',
+    },
+    {
+      titulo: 'Torque',
+      descripcion:  '14 Nm @ 6500 rpm',
+    },
+    {
+      titulo: 'Transmisión',
+      descripcion: '5 velocidades',
+    },
+    {
+      titulo: 'Peso',
+      descripcion:  '148 kg',
+    },
+    {
+      titulo: 'Capacidad tanque',
+      descripcion:  '13 L',
+    },
+    {
+      titulo: 'Frenos',
+      descripcion:  'Disco delantero y trasero con ABS',
+    },
+    {
+      titulo: 'Altura al suelo',
+      descripcion:  '160 mm',
+    },
+  ];
+  const data = [
+    {
+      titulo: "Sistema de frenos ABS delantero",
+      descripcion: "",
+      imagen: "/images/Suzukidr.png"
+    },
+    { titulo: "Motor confiable y eficiente" },
+    { titulo: "Ideal para ciudad y caminos rurales" },
+    { titulo: "Puerto de carga USB" },
+    { titulo: "Tablero digital" },
+    { titulo: "Gran altura al suelo (perfecta para terrenos difíciles)" },
+    { titulo: "Posición de manejo cómoda para trayectos largos" }
+  ];
 
+  const data_2 = [
+    {
+      titulo: "Sistema ABS doble canal",
+      descripcion: "",
+      imagen: "/images/suzukivst.png"
+    },
+    { titulo: "Diseño tipo adventure touring" },
+    { titulo: "Iluminación full LED" },
+    { titulo: "Tablero digital" },
+    { titulo: "Puerto de carga USB" },
+    { titulo: "Llantas doble propósito" },
+    { titulo: "Ergonomía cómoda para viajes" }
+  ];
   const descripcion1 = textoCompleto.slice(0, puntoDivision).trim();
   const descripcion2 = textoCompleto.slice(puntoDivision).trim();
   return (
-    <div style={{ background: '' }}>
+    <div style={{ background: '#000' }}>
       <div className="container-fluid conte--carousel">
         <div className="row justify-content-center">
           <div className="col-12">
@@ -98,11 +159,11 @@ export function Home() {
             {/* <TecnologiaHonda /> */}
             <main className="container">
               <div className="row row__pioneros__home text-center my-5">
-                <p className="pioneros__home" style={{ color: configuracionData?.colorCuerpo }}>
+                {/* <p className="pioneros__home" style={{ color: configuracionData?.colorCuerpo }}>
                   Pioneros en
-                </p>
+                </p> */}
                 <p className="tecnologia__home" style={{ color: configuracionData?.colorTituloHome }}>
-                  TECNOLOGÍA EFICIENTE Y ACCESIBLE
+                 Tecnologías Suzuki Motocicletas
                 </p>
               </div>
 
@@ -124,19 +185,38 @@ export function Home() {
                 {/* {jsonSeccionMotoDetallada.map((item, idx) => ( */}
                 <SeccionMotoDetallada
                   key="UYTZ"
-                  ImagenMoto="/images/motoSeccion.jpg"
-                  Titulo={configuracionData?.tituloMoto_1 || ''}
-                  Subtitulo={configuracionData?.subTituloMoto_1 || ''}
-                  Descripcion_1={descripcion1}
-                  Descripcion_2={descripcion2}
-                  Transmision={configuracionData?.transmisionMoto_1 || ''}
-                  Cilindraje={configuracionData?.cilindrajeMoto_1 || ''}
-                  Motor={configuracionData?.motorMoto_1 || ''}
+                  ImagenMoto="/images/Suzukidr.png"
+                  Titulo='Desde $10.590.000 (financiada) / $10.990.000 contado'
+                  Subtitulo='SUZUKI DR 150 ABS'
+                  Descripcion_1='Desafía cualquier terreno con seguridad y confianza. Una doble propósito diseñada para rendir tanto en la ciudad como fuera del asfalto, combinando resistencia, comodidad y tecnología ABS.'
+                  Descripcion_2=''
+                  Transmision='5 velocidades'
+                  Cilindraje='149 CC'
+                  Motor='11.8 HP @ 8000 rpm'
                   ColorTitulo={configuracionData?.colorTituloHome || ''}
                   ColorCuerpo={configuracionData?.colorCuerpo || ''}
                 />
                 {/* ))} */}
               </div>
+              <section className="row contenido__label__Especificacion text-center my-5">
+          <label className="EspecificacionesTecnicas__Titulo__Home" style={{ color: 'white' }}>
+            ESPECIFICACIONES TÉCNICAS
+          </label>
+        </section>
+
+        <div className="row g-4 mb-5">
+          {jsonItemsTecnicos.map((item, idx) => (
+            <DescripcionSeccionBarraPorcentaje
+              key={item.titulo || idx}
+              Titulo={item.titulo}
+              Descripcion={item.descripcion}
+              ColorCuerpo={configuracionData?.colorCuerpo}
+            />
+          ))}
+        </div>
+        <div style={{paddingBottom:'50px'}}>
+      <MotoDescripcion data={data} urlimag='/images/Suzukidr.png'/>
+    </div>
               <div
                 style={{
                   position: 'absolute',
@@ -189,55 +269,20 @@ export function Home() {
             </div>
           </div>
         </div>
-        <div style={{ background: '#eeeeee' }}>
+        <div style={{ background: '#000' }}>
           <div className="container">
-            <div className="row align-items-center mb-5">
-              <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mb-md-0">
-                <img src="/images/pulsarns200.png" alt="Moto Pulsar NS200" className="img-fluid " style={{ width: '100%', height: 'auto' }} />
-              </div>
-
-              <div className="col-lg-6 col-md-6 col-sm-12">
-                <TituloSeccionBarraPorcentaje
-                  Titulo={configuracionData?.tituloMoto_2 || ''}
-                  Subtitulo={configuracionData?.subTituloMoto_2}
-                  ColorSubtiutlo={configuracionData?.colorTituloHome || ''}
-                  ColorCuerpo={configuracionData?.colorCuerpo || ''}
-                />
-
-                <div className="row gy-3 my-3">
-                  {jsonBarraPorcentaje.map((item, idx) => (
-                    <BarraPorcentaje
-                      key={item.id || idx}
-                      porcentaje={item.porcentaje}
-                      color={item.color}
-                      titulo={item.titulo}
-                      ColorCuerpo={configuracionData?.colorCuerpo || ''}
-                    />
-                  ))}
-                </div>
-
-                <div className="row gy-3">
-                  {/* {jsonSeccionBarraPorcentaje.map((item, idx) => ( */}
-                  <SeccionBarraPorcentaje
-                    key="PNTY"
-                    Motor={configuracionData?.motorMoto_2 || ''}
-                    Cilindraje={configuracionData?.cilindrajeMoto_2 || ''}
-                    potencia={configuracionData?.maximaPotencianMoto_2 || ''}
-                    ColorCuerpo={configuracionData?.colorCuerpo || ''}
-                  />
-                  {/* ))} */}
-                </div>
-              </div>
-            </div>
+            <div style={{paddingBottom:'50px'}}>
+            <MotoDescripcion data={data_2} urlimag='/images/suzukivst.png' op='2'/>
+          </div>
 
             <section className="row contenido__label__Especificacion text-center my-5">
-              <label className="EspecificacionesTecnicas__Titulo__Home" style={{ color: configuracionData?.colorCuerpo }}>
+              <label className="EspecificacionesTecnicas__Titulo__Home" style={{ color: 'white' }}>
                 ESPECIFICACIONES TÉCNICAS
               </label>
             </section>
 
             <div className="row g-4 mb-5">
-              {jsonItemsTecnicos.map((item, idx) => (
+              {jsonItemsTecnicos_2.map((item, idx) => (
                 <DescripcionSeccionBarraPorcentaje
                   key={item.titulo || idx}
                   Titulo={item.titulo}

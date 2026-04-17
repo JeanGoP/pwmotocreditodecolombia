@@ -3,10 +3,10 @@
 }
 .titulo__seccionMotoDetallada {
   /* color: white; */
-  font-size: 25px;
+  font-size: 20px;
   color: white !important;
-  font-family: 'Roboto', Sans-serif;
-  font-weight: 300;
+
+  font-family: 'Bebas Neue', Sans-serif;
 }
 .subtitulo_seccionModoDetallada {
   /* color: white; */
@@ -20,7 +20,12 @@
   color: white !important;
   text-align: justify;
 }
-
+._label_descripcion{
+  font-size: 22px;
+  color: white !important;
+  text-align: justify;
+  padding-bottom: 20px;
+}
 .descripcion__seccionMotoDetallada {
   padding-top: 10px;
   color: white !important;

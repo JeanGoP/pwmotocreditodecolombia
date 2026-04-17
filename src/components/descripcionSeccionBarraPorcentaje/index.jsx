@@ -12,8 +12,8 @@ const DescripcionSeccionBarraPorcentaje = ({Titulo, Descripcion, ColorCuerpo}) =
     } 
     return(
 
-            <div className="col-lg-4 col-md-4 col-sm-12 contenido__descripcionSeccionBarraPorcentaje">
-                <label className="titulo__descripcionSeccionBarraPorcentaje"style={{ color: ColorCuerpo }} >{Titulo}</label><br></br>
+            <div className="col-lg-3 col-md-3 col-sm-12 contenido__descripcionSeccionBarraPorcentaje">
+                <label className="titulo__descripcionSeccionBarraPorcentaje"style={{ color: 'white' }} >{Titulo}</label><br></br>
                 <label className="subtitulo__descripcionSeccionBarraPorcentaje" >{Descripcion}</label>
             </div>
 

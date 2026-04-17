@@ -7,10 +7,10 @@ function isValidHex(color) {
 
 const SeccionMotoDetallada = ({ ImagenMoto, Titulo, Subtitulo, Descripcion_1, Descripcion_2, Motor, Cilindraje, Transmision, ColorTitulo, ColorCuerpo }) => {
   const gray = '#808080';
-  let newColor = ColorCuerpo;
-  if (ColorCuerpo && isValidHex(ColorCuerpo)) {
-    newColor = mix(0.5, gray, ColorCuerpo);
-  }
+  let newColor = gray;
+  // if (ColorCuerpo && isValidHex(ColorCuerpo)) {
+  //   newColor = mix(0.5, gray, ColorCuerpo);
+  // }
   return (
     <div className="row contenido__seccionMotoDetallada h-100">
       <div className="col-lg-5 col-md-7 col-sm-12 mb-4">
@@ -29,21 +29,16 @@ const SeccionMotoDetallada = ({ ImagenMoto, Titulo, Subtitulo, Descripcion_1, De
           </label>
         </div>
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            <label className="descripcion__seccionMotoDetallada" style={{ color: ColorCuerpo }}>
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <label className="_label_descripcion" style={{ color: ColorCuerpo }}>
               {Descripcion_1}
-            </label>
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            <label className="descripcion__seccionMotoDetallada" style={{ color: ColorCuerpo }}>
-              {Descripcion_2}
             </label>
           </div>
         </div>
         <div className="row footer__descripcion__seccionMotoDetallada div__detalle__border">
           <div className="col-lg-4 col-md-4 col-sm-12 ">
             <label className="footer__label__seccionMotoDetallada" style={{ color: ColorCuerpo }}>
-              MOTOR
+              POTENCIA
             </label>
             <p className="footer__p__seccionMotoDetallada" style={{ color: newColor }}>
               {Motor}
