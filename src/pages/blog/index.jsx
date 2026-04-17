@@ -46,11 +46,11 @@ export function Blog() {
             <h2>ARTÍCULOS Y NOTICIAS</h2>
           </div>
         </div>
-        <div className="col-12" style={{ paddingTop: '30px' }}>
+        {/* <div className="col-12" style={{ paddingTop: '30px' }}>
           {jsonBlog.map((item, index) => (
             <CardBlog key={index} titulo={item.titulo} fecha={item.fecha} imagen={item.imagen} objecto={item} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
