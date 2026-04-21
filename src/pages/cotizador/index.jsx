@@ -31,7 +31,7 @@ export function Cotizador() {
         <section
           className="visitanos-hero"
           style={{
-            backgroundImage: `url('${configuracionData?.rutaPortadaVisitanos}')`,
+            backgroundImage: `url('${configuracionData?.rutaPortadaCotizador}')`,
           }}
         >
           <div className="visitanos-hero-overlay"></div>
