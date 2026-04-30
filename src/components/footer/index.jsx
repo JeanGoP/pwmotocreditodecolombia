@@ -120,7 +120,7 @@ function Footer() {
             <div className="row" style={{ paddingTop: '13px' }}>
               <a
                 className="clickable icono_footer"
-                href="https://lineaetica.onrender.com/?empresa=Motos%20Del%20Aburra "
+                href="https://lineaetica.onrender.com/?empresa=Motocredito"
                 target="_blank"
                 style={{ textDecoration: 'none' }}
               >
